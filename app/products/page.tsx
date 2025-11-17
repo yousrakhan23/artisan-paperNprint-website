@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import Navigation from "@/components/navigation"
+import Navigation from "@/components/Navigation"
 import { PRODUCTS } from "@/lib/products"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"

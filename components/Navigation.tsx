@@ -1,8 +1,9 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { useState } from "react"
-import { Menu, X, Leaf, ShoppingCart } from "lucide-react"
+import { Menu, X, ShoppingCart } from "lucide-react"
 import { useCart } from "@/context/cart-context"
 
 export default function Navigation() {
@@ -14,9 +15,7 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center">
-              <Leaf className="w-5 h-5 text-white" />
-            </div>
+            <Image src="/logo.png" alt="Artisan Paper N Print" width={40} height={40} className="object-contain" />
             <span className="font-bold text-lg text-gray-900 hidden sm:inline">Artisan Paper N Print</span>
           </Link>
 
@@ -28,10 +27,10 @@ export default function Navigation() {
             <Link href="/products" className="text-gray-700 hover:text-green-600 transition">
               Products
             </Link>
-            <a href="#" className="text-gray-700 hover:text-green-600 transition">
+            <a href="/about" className="text-gray-700 hover:text-green-600 transition">
               About
             </a>
-            <a href="#" className="text-gray-700 hover:text-green-600 transition">
+            <a href="/contact" className="text-gray-700 hover:text-green-600 transition">
               Contact
             </a>
             <Link href="/cart" className="relative">
@@ -67,10 +66,10 @@ export default function Navigation() {
             <Link href="/products" className="block text-gray-700 hover:text-green-600">
               Products
             </Link>
-            <a href="#" className="block text-gray-700 hover:text-green-600">
+            <a href="/about" className="block text-gray-700 hover:text-green-600">
               About
             </a>
-            <a href="#" className="block text-gray-700 hover:text-green-600">
+            <a href="/contact" className="block text-gray-700 hover:text-green-600">
               Contact
             </a>
           </div>

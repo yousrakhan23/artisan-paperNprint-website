@@ -2,7 +2,7 @@
 
 import dynamic from "next/dynamic"
 import Link from "next/link"
-import Navigation from "@/components/navigation"
+import Navigation from "@/components/Navigation"
 import { useCart } from "@/context/cart-context"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"

@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import Navigation from "@/components/navigation"
+import Navigation from "@/components/Navigation"
 import { useCart } from "@/context/cart-context"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"

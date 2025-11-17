@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import Navigation from "@/components/navigation"
+import Navigation from "@/components/Navigation"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Leaf, Sprout, Heart } from "lucide-react"
 
@@ -44,7 +44,11 @@ export default function Home() {
               </div>
             </div>
             <div className="hidden lg:block">
-              <img src="/artisan-plantable-seed-paper-products.jpg" alt="Plantable seed paper products" className="w-full h-auto" />
+              <img
+                src="/artisan-plantable-seed-paper-products.jpg"
+                alt="Plantable seed paper products"
+                className="w-full h-auto"
+              />
             </div>
           </div>
         </div>
@@ -122,7 +126,7 @@ export default function Home() {
               <Card key={i} className="hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <img
-                    src={`/.jpg?height=250&width=300&query=${item.title.toLowerCase()}-plantable`}
+                    src="/images/design-mode/Handmade%20Paper%20%28handmade%20plantable%20seed%20paper%20cards%29.jpeg"
                     alt={item.title}
                     className="w-full h-48 object-cover rounded mb-4"
                   />
@@ -180,7 +184,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
+      <footer className="text-white py-12 bg-popover-foreground">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
@@ -188,11 +192,11 @@ export default function Home() {
               <p className="text-gray-400">Handmade plantable seed paper for meaningful moments.</p>
             </div>
             <div>
-              <h4 className="font-semibold mb-4">Shop</h4>
+              <h4 className="font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2 text-gray-400">
                 <li>
                   <Link href="/products" className="hover:text-white">
-                    All Products
+                    Shop
                   </Link>
                 </li>
                 <li>
@@ -248,8 +252,8 @@ export default function Home() {
               </ul>
             </div>
           </div>
-          <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 Artisan Paper N Print. All rights reserved. Handmade with love for the planet.</p>
+          <div className="border-t border-gray-800 pt-8 text-center text-popover">
+            <p className="text-secondary">&copy; 2025 Artisan Paper N Print. All rights reserved. Handmade with love for the plant.</p>
           </div>
         </div>
       </footer>

@@ -3,7 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import { useParams, useRouter } from "next/navigation"
-import Navigation from "@/components/navigation"
+import Navigation from "@/components/Navigation"
 import { PRODUCTS } from "@/lib/products"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -86,12 +86,6 @@ export default function ProductDetailPage() {
             {/* Price */}
             <div className="mb-8">
               <p className="text-4xl font-bold text-green-600">${(product.priceInCents / 100).toFixed(2)}</p>
-            </div>
-
-            {/* Description */}
-            <div className="mb-8">
-              <h3 className="font-semibold text-gray-900 mb-2">About this product</h3>
-              <p className="text-gray-600 leading-relaxed">{product.longDescription}</p>
             </div>
 
             {/* Features */}
